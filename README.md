@@ -1,21 +1,24 @@
-# 🤖 Robot de Trading Automatizado (Docker Edition)
+# 🤖 Robot de Trading Automatizado (Bitcoin Analysis)
 
-Este proyecto es un sistema de trading algorítmico desarrollado en **Python**, diseñado para el análisis de mercados financieros en tiempo real y la ejecución automatizada de estrategias.
+Este proyecto es un sistema de análisis y trading algorítmico desarrollado en **Python**, diseñado para procesar datos financieros en tiempo real y visualizar tendencias de mercado.
 
-### 🚀 Actualización 2026: Mejoras de Infraestructura
-Recientemente he actualizado el entorno del proyecto para alinearlo con estándares profesionales de Data Science:
-* **Contenerización:** Migración completa a **Docker** para asegurar que el robot corra en cualquier entorno sin conflictos de dependencias.
-* **Stack de Monitoreo:** Integración en proceso con **Elasticsearch y Kibana** para el logueo de operaciones y visualización de métricas de rendimiento (Backtesting).
+![Visualización de Tendencias](./resultado_trading.png)
+*Ejemplo de salida del sistema: Análisis de precios y toma de decisiones automatizada.*
 
-### 🛠️ Tecnologías Utilizadas
-* **Lenguaje:** Python (Pandas, NumPy para procesamiento de datos).
-* **Visualización:** Plotly / Matplotlib.
-* **Infraestructura:** Docker, Vagrant, Linux.
+### 🚀 Estado del Proyecto (Actualización 2026)
+Aunque el núcleo del algoritmo fue desarrollado previamente, el entorno ha sido actualizado para integrarse con:
+* **Docker:** Contenerización completa para despliegue consistente.
+* **Pipelines de Datos:** Optimización de la limpieza de datos con Pandas y NumPy para mejorar la precisión del análisis.
 
-### 📈 Características Principales
-1. **Extracción de Datos:** Conexión con APIs financieras para obtención de OHLCV.
-2. **Backtesting:** Motor de pruebas históricas para validar estrategias antes de ir a producción.
-3. **Despliegue:** Configurado para correr 24/7 en contenedores aislados.
+### 🛠️ Tecnologías y Herramientas
+* **Lenguaje:** Python (Pandas, Matplotlib, y APIs financieras).
+* **Infraestructura:** Docker, Linux.
+* **Monitoreo:** Integración proyectada con **Elasticsearch y Kibana** para seguimiento de métricas.
+
+### 📈 Funcionalidades
+1. **Recopilación Automatizada:** Conexión y extracción de datos históricos y actuales.
+2. **Análisis de Tendencias:** Cálculo de promedios móviles y señales de decisión (Compra/Venta/Ninguna).
+3. **Visualización Dinámica:** Generación de gráficos interactivos del comportamiento del Bitcoin.
 
 ---
-*Proyecto desarrollado por Daniel E. Villarreal - Analista de Datos con foco en Finanzas y ML.*
+*Desarrollado por Daniel E. Villarreal - Analista de Datos con enfoque en Finanzas.*
