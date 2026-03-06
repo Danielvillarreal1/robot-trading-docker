@@ -1,5 +1,10 @@
 # 🤖 Robot de Trading Automatizado (Bitcoin Analysis)
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Data Analysis](https://img.shields.io/badge/Data-Analysis-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 Este proyecto es un sistema de **análisis y trading algorítmico** desarrollado en **Python**, diseñado para procesar datos financieros en tiempo real y automatizar la toma de decisiones estratégicas en el mercado de criptomonedas.
 
 ## 🚀 Estado del Proyecto (Actualización 2026)
