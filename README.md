@@ -1,24 +1,46 @@
-# 🤖 Robot de Trading Automatizado (Bitcoin Analysis)
+🤖 Robot de Trading Automatizado (Bitcoin Analysis)
+Este proyecto es un sistema de análisis y trading algorítmico desarrollado en Python, diseñado para procesar datos financieros en tiempo real y automatizar la toma de decisiones estratégicas en el mercado de criptomonedas.
 
-Este proyecto es un sistema de análisis y trading algorítmico desarrollado en **Python**, diseñado para procesar datos financieros en tiempo real y visualizar tendencias de mercado.
+🚀 Estado del Proyecto (Actualización 2026)
+El núcleo del algoritmo ha sido optimizado para integrarse en entornos de producción mediante:
 
-![Visualización de Tendencias](./resultado_trading.png)
-*Ejemplo de salida del sistema: Análisis de precios y toma de decisiones automatizada.*
+Docker: Contenerización completa para una implementación consistente y escalable.
 
-### 🚀 Estado del Proyecto (Actualización 2026)
-Aunque el núcleo del algoritmo fue desarrollado previamente, el entorno ha sido actualizado para integrarse con:
-* **Docker:** Contenerización completa para despliegue consistente.
-* **Pipelines de Datos:** Optimización de la limpieza de datos con Pandas y NumPy para mejorar la precisión del análisis.
+Pipelines de Datos: Limpieza avanzada con Pandas y NumPy utilizando filtros por cuartiles (Q1-Q3) para eliminar anomalías de mercado.
 
-### 🛠️ Tecnologías y Herramientas
-* **Lenguaje:** Python (Pandas, Matplotlib, y APIs financieras).
-* **Infraestructura:** Docker, Linux.
-* **Monitoreo:** Integración proyectada con **Elasticsearch y Kibana** para seguimiento de métricas.
+Robustez: Sistema de scraping con respaldo (fallback) que garantiza la continuidad operativa mediante datos históricos de Yahoo Finance en caso de fallas externas.
 
-### 📈 Funcionalidades
-1. **Recopilación Automatizada:** Conexión y extracción de datos históricos y actuales.
-2. **Análisis de Tendencias:** Cálculo de promedios móviles y señales de decisión (Compra/Venta/Ninguna).
-3. **Visualización Dinámica:** Generación de gráficos interactivos del comportamiento del Bitcoin.
+🛠️ Tecnologías y Herramientas
+Lenguaje: Python 3.x (Pandas, Matplotlib, YFinance).
 
----
-*Desarrollado por Daniel E. Villarreal - Analista de Datos con enfoque en Finanzas.*
+Infraestructura: Docker, Linux.
+
+Análisis: Web Scraping dinámico con BeautifulSoup4 y Requests.
+
+Automatización: Sistema de ejecución en bucle cada 5 minutos con actualización visual dinámica.
+
+📈 Funcionalidades
+Recopilación Automatizada: Descarga histórica de 7 días (intervalos de 5 min) y scraping en tiempo real de CoinMarketCap.
+
+Análisis y Toma de Decisiones: Algoritmo basado en el cruce de precio actual vs. promedio y tendencias de mercado para emitir señales de Compra, Venta o Ninguna.
+
+Visualización Dinámica: Gráficos interactivos generados con Matplotlib que muestran la evolución del precio y las decisiones del bot.
+
+🐳 Instalación y Uso con Docker
+Como el proyecto está diseñado para ser portable, la forma recomendada de ejecución es mediante Docker:
+
+Construir la imagen:
+
+Bash
+
+sudo docker build -t robot-trading-bitcoin .
+Ejecutar el contenedor:
+Se recomienda mapear al puerto 8889 para evitar conflictos:
+
+Bash
+
+sudo docker run -p 8889:8888 robot-trading-bitcoin
+Acceder:
+Copia la URL con el token generado por el contenedor (ej: http://127.0.0.1:8889/?token=...) y ábrela en tu navegador para ver el notebook en acción.
+
+Desarrollado por Daniel E. Villarreal - Analista de Datos con enfoque en Finanzas y Arquitecturas Contenerizadas.
