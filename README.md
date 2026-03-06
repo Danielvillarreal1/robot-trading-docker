@@ -6,7 +6,7 @@ El núcleo del algoritmo ha sido optimizado para integrarse en entornos de produ
 
 Docker: Contenerización completa para una implementación consistente y escalable.
 
-Pipelines de Datos: Limpieza avanzada con Pandas y NumPy utilizando filtros por cuartiles (Q1-Q3) para eliminar anomalías de mercado.
+Pipelines de Datos: Limpieza avanzada con Pandas y NumPy utilizando filtros por cuartiles (Q1-Q3) para eliminar anomalías del mercado.
 
 Robustez: Sistema de scraping con respaldo (fallback) que garantiza la continuidad operativa mediante datos históricos de Yahoo Finance en caso de fallas externas.
 
@@ -27,20 +27,19 @@ Análisis y Toma de Decisiones: Algoritmo basado en el cruce de precio actual vs
 Visualización Dinámica: Gráficos interactivos generados con Matplotlib que muestran la evolución del precio y las decisiones del bot.
 
 🐳 Instalación y Uso con Docker
-Como el proyecto está diseñado para ser portable, la forma recomendada de ejecución es mediante Docker:
+Como el proyecto está diseñado para ser portátil, la forma de ejecución recomendada es mediante Docker:
 
-Construir la imagen:
-
+1. Construir la imagen:
 Bash
 
 sudo docker build -t robot-trading-bitcoin .
-Ejecutar el contenedor:
+2. Ejecutar el contenedor:
 Se recomienda mapear al puerto 8889 para evitar conflictos:
 
 Bash
 
 sudo docker run -p 8889:8888 robot-trading-bitcoin
-Acceder:
+3. Acceder:
 Copia la URL con el token generado por el contenedor (ej: http://127.0.0.1:8889/?token=...) y ábrela en tu navegador para ver el notebook en acción.
 
 Desarrollado por Daniel E. Villarreal - Analista de Datos con enfoque en Finanzas y Arquitecturas Contenerizadas.
