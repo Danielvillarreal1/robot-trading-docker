@@ -26,11 +26,11 @@ Como el proyecto está diseñado para ser portátil, la forma de ejecución reco
 ### 1. Construir la imagen
 ```bash
 sudo docker build -t robot-trading-bitcoin .
-
+```
 ### 2. Ejecutar el contenedor
 ```bash
 sudo docker run -p 8889:8888 robot-trading-bitcoin
-
+```
 ### 3. Acceder
 Copia la URL con el token generado por el contenedor (ej: http://127.0.0.1:8889/?token=...) y ábrela en tu navegador para ver el notebook.
 
